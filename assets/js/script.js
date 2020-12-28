@@ -1,19 +1,9 @@
 // JavaScript Document
-// toggle menu nav-mobile
+
 $(document).on('click', '.mobile-nav-toggle', function() {
     $('body').toggleClass('mobile-nav-active');
     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
 });
-
-$(document).click(function(e) {
-    var container = $(".mobile-nav-toggle");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      if ($('body').hasClass('mobile-nav-active')) {
-        $('body').removeClass('mobile-nav-active');
-        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-      }
-    }
-  });
 
 var nav_sections = $('section');
   var main_nav = $('.nav-menu, #mobile-nav');
@@ -37,12 +27,24 @@ var nav_sections = $('section');
     });
  });
 
-$('.venobox').venobox({
-'share': false,
-framewidth: 'default', 
-frameheight: 'default',
-titleattr: 'false'
-}); 
+$('.mobile-nav-toggle').on('load', function() {
+	$('.navbar-toggler-icon')({
+});
 
+$('.mobile-nav-toggle').on('click', function() {
+	
+aos_init();
+});
 
+});
+
+$(function(){
+	
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+});
+	
+$('.carousel').carousel({
+  interval: 2000
+})
 });
