@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+html {
+  scroll-behavior: smooth;
+}
 
 /*--# GENERAL --*/
 body {
@@ -269,4 +272,358 @@ h5 {
 		font-size: 20px;
 		line-height: 24px;
 	  }
+}
+
+/*--# GENERAL SECCIONES --*/
+
+section {
+  	padding: 60px 0;
+  	overflow: hidden;
+}
+
+.section-title {
+  	text-align: center;
+  	padding-bottom: 30px;
+}
+
+.section-title h2 {
+  	font-size: 0.875rem;
+  	font-weight: 600;
+  	padding: 0;
+  	line-height: 1px;
+  	margin: 0 0 20px 0;
+  	letter-spacing: 2px;
+  	text-transform: uppercase;
+  	color: #7C7C7C;
+}
+
+.section-title h2::after {
+  	content: "";
+  	width: 120px;
+  	height: 1px;
+  	display: inline-block;
+  	background: #208C8C;
+  	margin: 4px 10px;
+}
+
+.section-title h2::before {
+  	content: "";
+  	width: 120px;
+  	height: 1px;
+  	display: inline-block;
+  	background: #208C8C;
+  	margin: 4px 10px;
+}
+
+.section-title p {
+  	margin: 0;
+  	margin: -15px 0 15px 0;
+  	font-size: 2.25rem;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	color: #1E4E59;
+}
+
+
+@media (max-width: 576px) {
+	
+		.section-title h2::after {
+		width: 5rem;
+		}
+
+		.section-title h2::before {
+		width: 5rem;
+		}
+	
+		.section-title p {
+  		font-size: 2rem;
+		}
+	
+}
+
+/*--# SOBRE MI --*/
+
+#about .description {
+	text-align: center !important;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	border-bottom: 1px solid #eaeaea;
+}
+
+#about .description h3 {
+	color: #1E4E59;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#about .description img {
+	width: 380px;
+}
+
+#about .content p:last-child {
+  	margin-bottom: 0;
+}
+
+#about .bx {
+  	color: #fff;
+ 	font-size: 30px;
+}
+
+#about .about-image {
+    text-align: center;
+	padding-top: 0;
+	padding-bottom: 3rem;
+}
+
+#about .about-image img {
+    border-radius: 100%;
+    width: 360px;
+    height: 350px;
+    display: inline-block;
+	box-shadow: 0 0 20px #ddd;
+}
+
+#about .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+	}
+
+
+@media (max-width: 576px) {
+	
+		#about .about-image {
+		padding-bottom: 1rem;
+		}
+	
+		#about .about-image img {
+		width: 250px;
+		height: 250px;
+		}
+	
+		#about .description {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		}
+	
+		#about .description h3 {
+		font-size: 16px;
+		text-transform: uppercase;
+		line-height: 1.6rem;
+		}
+			
+}
+
+@media (max-width: 768px) {
+	
+		#about .description h3 {
+		line-height: 1.8rem;
+	}
+}
+	
+/* INTERESES */
+
+
+.hobbies {
+    position: relative;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+
+.hobbie-thumb {
+	text-align: center;
+}
+
+.hobbie-thumb .bx {
+    background: #208C8C;
+    border-radius: 50%;
+    color: #fff;
+    width: 115px;
+    height: 115px;
+    line-height: 115px;
+    text-align: center;
+    transition: all ease-in-out 0.4s;
+	font-size: 3rem !important;
+}
+
+.hobbies .hobbie-thumb h3 {
+	text-align: center;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 30px;
+	padding-top: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	}
+
+.hobbie-thumb .bx-swim {
+	background-color: #F2A950;
+}
+
+.hobbie-thumb .bxs-tree {
+	background-color: #1E4E59;
+}
+
+.hobbie-thumb .bx-glasses {
+	background-color: #F28D52;
+}
+
+.hobbie-thumb .bx-camera {
+	background-color: #273459;
+}
+
+@media (max-width: 576px) {
+		
+		.hobbies {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		}
+	
+		.hobbies .hobbie-thumb {
+		padding-bottom: 2rem;
+		}
+
+		.hobbies .hobbie-thumb h3 {
+		padding-top: 1.5rem;
+		font-weight: 600;
+		}
+}
+
+@media (max-width: 768px) {
+		
+		.hobbies .hobbie-thumb p {
+		font-size: 14px;
+		}
+}
+
+/*--# HABILIDADES --*/
+
+.skills {
+	background-color: #f8f9fa !important;
+}
+
+.skills .skills-content {
+	border-bottom: 1px solid #eaeaea;
+	padding: 1rem 0 2rem 0;
+	margin: 0 0 3rem 0 ;
+}
+
+.skill {
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.skills h3 {
+	border-bottom: 1px solid #eaeaea;
+	font-size: 0.875rem;
+  	font-weight: 600;
+  	line-height: 1px;
+	padding-bottom: 1.5rem;
+  	letter-spacing: 2px;
+  	text-transform: uppercase;
+  	color: #7C7C7C;
+	text-align: center;
+}
+
+.skills .progress {
+	height: 50px;
+	display: block;
+	background: none;
+	padding-top: 10px;
+}
+
+.skills .progress .skill {
+	padding: 0 0;
+	margin: 0 0 2px 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #7C7C7C;
+	margin-left: 10px;
+}
+
+.skill .progress-bar-wrap {
+	height: 10px;
+  	background: #C9C9C9;
+	border-radius: 5px;
+	margin-top: 0.8rem;
+	
+}
+
+.skill .progress-bar {
+  	width: 1px;
+  	height: 10px;
+  	transition: 0.9s;
+  	background-color: #208C8C;
+	border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+	
+		.skills .skill {
+		padding: 2rem 1rem 2rem 1rem;
+		}
+		
+		.skills .skills-content {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		}
+}
+
+@media (max-width: 768px) {
+		
+		.skills .skill {
+		padding-bottom: 3rem;
+		}
+}
+
+/*Herramientas*/
+
+.skills .tools {
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.tools p {
+	text-align: center;
+}
+
+.carousel-wrap {
+	padding-top: 2rem;
+  	position: relative;
+	}
+
+.owl-carousel p {
+	text-align: center;	
+}
+
+.item i {
+	color: #B7B7B7;
+	font-size: 3.8rem;
+	text-align: center;
+	}
+
+.item {
+	background-color: #fff;
+	height: 130px;
+	width: 140px;
+	color: #B7B7B7;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 10px;
+	font-weight: 500;
+	padding-top: 22px;
+	font-size: 13px;
+}
+
+.owl-carousel  .item i:hover, .item:hover {
+	color: #208C8C;
+}
+
+
+@media (max-width: 576px) {
+	
+		.skills .tools {
+		padding-left: 1.2rem;
+		padding-right: 1.2rem;
+		}
 }
