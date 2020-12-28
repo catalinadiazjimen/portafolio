@@ -1,5 +1,19 @@
 // JavaScript Document
 
+// typed
+if ($('.typed').length) {
+    var typed_strings = $(".typed").data('typed-items');
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+
+
 $(document).on('click', '.mobile-nav-toggle', function() {
     $('body').toggleClass('mobile-nav-active');
     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
@@ -38,6 +52,12 @@ aos_init();
 
 });
 
+AOS.init({
+	offset: 120,
+	duration: 400,
+	easing: 'ease'
+});
+
 $(function(){
 	
 $('#myModal').on('shown.bs.modal', function () {
@@ -47,4 +67,8 @@ $('#myModal').on('shown.bs.modal', function () {
 $('.carousel').carousel({
   interval: 2000
 })
+
+	
 });
+
+

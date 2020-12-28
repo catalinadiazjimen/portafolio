@@ -105,6 +105,7 @@ h5 {
 }
 
 .nav-menu a span {
+font-size: 1rem;
   padding: 0 5px 0 7px;
   color: #45505b;
 }
@@ -187,7 +188,7 @@ h5 {
 	}
 
 #hero h1 {
-	margin: 0 0 2rem 0;
+	margin: 0;
 	font-size: 90px;
 	font-weight: 700;
 	line-height: 56px;
@@ -197,14 +198,10 @@ h5 {
 #hero p {
 	color: #fff;	
 	margin: 15px 0 15px 0;
-	font-size: 2rem;
+	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 4px;
-}
-
-span {
-	font-size: 1.5rem;
 }
 
 #hero .btn-hero .btn-outline-primary {
@@ -517,6 +514,10 @@ section {
   	text-transform: uppercase;
   	color: #7C7C7C;
 	text-align: center;
+}
+
+.progress p {
+	font-size: 0.8rem;
 }
 
 .skills .progress {
