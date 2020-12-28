@@ -197,10 +197,14 @@ h5 {
 #hero p {
 	color: #fff;	
 	margin: 15px 0 15px 0;
-	font-size: 30px;
+	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 4px;
+}
+
+span {
+	font-size: 1.5rem;
 }
 
 #hero .btn-hero .btn-outline-primary {
